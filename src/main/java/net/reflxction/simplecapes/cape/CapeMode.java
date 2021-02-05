@@ -40,6 +40,9 @@ public enum CapeMode {
             if (mode.name().equals(name)) return mode;
         }
         return CapeMode.URL;
+        URL url = MyClass.class.getResource("/res/images/animated.gif");
+ImageIcon imageIcon = new ImageIcon(url);
+JLabel label = new JLabel(imageIcon);
     }
 
 }
